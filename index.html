@@ -6,6 +6,18 @@
     <title>MHendy Danakini Test Page</title>
 </head>
 <body>
+    <h2>Test DKF Deep Link</h2>
+    <a href="com.dkf.danakinifinance://home">Open</a>
+
+    <br><br>
+
+    <button onclick="openApp()">Open with JavaScript</button>
+
+    <script>
+        function openApp() {
+            window.location.href = "com.dkf.danakinifinance://home";
+        }
+    </script>
   <a href="com.dkf.danakinifinance://home">Go To DKF Home</a>
 </body>
 </html>
