@@ -7,15 +7,20 @@
 </head>
 <body>
     <h2>Test DKF Deep Link</h2>
-    <a href="com.dkf.danakinifinance://home">Open</a>
+    <a href="com.dkf.danakinifinance://page/redirection?path=default">Splash - Redirect Default</a>
+    <a href="com.dkf.danakinifinance://page/redirection?path=tagihan">Splash - Redirect Tagihan</a>
 
     <br><br>
 
-    <button onclick="openApp()">Open with JavaScript</button>
+    <button onclick="openDefault()">JS Splash - Redirect Default</button>
+    <button onclick="openTagihan()">JS Splash - Redirect Tagihan</button>
 
     <script>
-        function openApp() {
-            window.location.href = "com.dkf.danakinifinance://home";
+        function openDefault() {
+            window.location.href = "com.dkf.danakinifinance://page/redirection?path=default";
+        }
+        function openTagihan() {
+            window.location.href = "com.dkf.danakinifinance://page/redirection?path=tagihan";
         }
     </script>
 </body>
