@@ -16,6 +16,7 @@
     <button onclick="openDefault()">JS Splash - Redirect Default</button>
     <button onclick="openTagihan('pbk')">JS Splash - Redirect Tagihan PBK</button>
     <button onclick="openTagihan('pyl')">JS Splash - Redirect Tagihan PYL</button>
+    <button onclick="openPromo('promo')">JS Splash - Promo</button>
 
     <script>
         function openDefault() {
@@ -23,6 +24,9 @@
         }
         function openTagihan(cat) {
             window.location.href = "com.dkf.danakinifinance://page/redirection?path=tagihan&amp;cat="+cat;
+        }
+        function openDefault() {
+            window.location.href = "com.dkf.danakinifinance://promo_list";
         }
     </script>
 </body>
