@@ -11,6 +11,7 @@
     <a href="com.dkf.danakinifinance://page/redirection?path=tagihan&amp;cat=pbk">Splash - Redirect Tagihan PBK</a>
     <a href="com.dkf.danakinifinance://page/redirection?path=tagihan&amp;cat=pyl">Splash - Redirect Tagihan PYL</a>
     <a href="com.dkf.danakinifinance://promo_page">Splash - Promo</a>
+    <a href="com.dkf.danakinifinance://paylater?branch=qa12345">Splash - PayLater Branch</a>
 
     <br><br>
 
@@ -18,6 +19,7 @@
     <button onclick="openTagihan('pbk')">JS Splash - Redirect Tagihan PBK</button>
     <button onclick="openTagihan('pyl')">JS Splash - Redirect Tagihan PYL</button>
     <button onclick="openPromo('promo')">JS Splash - Promo</button>
+    <button onclick="openPaylater()">Splash - PayLater Branch</button>
 
     <script>
         function openDefault() {
@@ -28,6 +30,9 @@
         }
         function openDefault() {
             window.location.href = "com.dkf.danakinifinance://promo_page";
+        }
+        function openPaylater() {
+            window.location.href = "com.dkf.danakinifinance://paylater?branch=qa12345";
         }
     </script>
 </body>
